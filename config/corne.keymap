@@ -67,25 +67,25 @@
                 raise_layer {
                         bindings = <
    &none &kp EXCL   &kp LBRC   &kp LBKT      &kp LPAR       &kp PIPE        &kp AMPS   &kp RPAR         &kp RBKT       &kp RBRC         &kp QMARK    &none
-   &none &mt LSHIFT N1 &mt RALT N2 &mt LCTRL N3   &mt LGUI N4    &kp BSLH         &kp FSLH &mt RGUI N7 &mt RCTRL N8 &mt RALT N9 &MT RSHIFT N0   &none
+   &none &mt LSHIFT N1 &mt RALT N2 &mt LCTRL N3   &mt LGUI N4    &kp BSLH         &kp FSLH &mt RGUI N7 &mt RCTRL N8 &mt RALT N9 &mt RSHIFT N0   &none
    &none &kp GRAVE   &mt TILDE PRCNT &kp CARET       &kp N5        &kp PLUS         &kp ASTRK &kp N6      &kp UNDER    &mt LALT MINUS   &kp EQUAL &none
                                &kp TAB &kp SPACE &mt LWR ESC     &kp BSPC &kp RSHIFT &mt RSE RET
                         >;
                 };
                 lower_layer {
                         bindings = <
-   &none &kp EXCL    &kp AT      &kp HASH     &kp DLLR     &kp PRCNT       &kp CARET     &kp AMPS        &kp KP_MULTIPLY &kp LPAR      &kp RPAR      &none
-   &none &mt LCMD F1 &mt RALT F2 &mt LCTRL F3 &mt LSHFT F4 &kp F5          &kp MINUS     &mt RSHFT EQUAL &mt RCTRL LBKT  &mt RALT RBKT &mt RCMD BSLH &none
-   &none &kp F6      &mt LALT F7 &kp F8       &kp F9       &kp F10         &kp UNDER     &kp PLUS        &kp LBRC        &kp RBRC      &kp PIPE      &none
-                                 &lt RSE ESC  &mo LWR      &kp GRAVE       &mt RSHFT RET &lt RSE BSPC    &lt LWR TAB
+   &none &none    &none       &none     &none      &none       &none     &kp HOME       &kp PG_DN &kp PG_UP      &kp END      &none
+   &none &mo LSHIFT &mo RALT &mo LCTRL &mo LGUI  &none         &none     &kp LEFT &kp DOWN  &kp UP &kp RIGHT &none
+   &none &none      &mo LALT &none       &none       &none         &none     &none        &none        &none      &none      &none
+                               &kp TAB &kp SPACE &mt LWR ESC     &kp BSPC &kp RSHIFT &mt RSE RET
                         >;
                 };
                 adjust_layer {
                         bindings = <
-   &none &bt BT_CLR   &none        &none        &none        &none            &none           &kp K_MUTE   &none &none &bootloader &none
-   &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &kp C_BRI_UP    &kp C_VOL_UP &none &none &reset      &none
-   &none &none        &none        &none        &none        &none            &kp C_BRI_DN    &kp C_VOL_DN &none &none &none       &none
-                                   &none        &none        &none            &none           &none        &none
+   &none &bt BT_CLR   &kp MUTE        &kp C_VOL_UP &kp C_BRI_UP &reset        &reset          &kp F1   &kp F2 &kp F3 &kp F4 &none
+   &none &mt LSHIFT BT_SEL 0 &mt RALT BT_SEL 1 &mt LCTRL BT_SEL 2 &mt BT_SEL 3 &kp BT_SEL 4     &none    &kp F5 &kp F6 &kp F7       &kp F8  &none
+   &none &none        &kp LALT       &kp C_VOL_DN &kp C_BRI_DN &bootloader      &bootloader    &kp F9 &kp F10 &kp F11       &kp F12  &none
+                               &kp TAB &kp SPACE &mt LWR ESC     &kp BSPC &kp RSHIFT &mt RSE RET
                         >;
                 };
         };

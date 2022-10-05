@@ -32,16 +32,32 @@
 / {
         combos {
            compatible = "zmk,combos";
-           combo_lpar {
-              timeout-ms = <50>;
-              key-positions = <25 26>;
-              bindings = <&kp LPAR>;
+           combo_tab {
+              timeout-ms = <25>;
+              key-positions = <15 16>;
+              bindings = <&kp TAB>;
            };
 
-           combo_rpar {
+           combo_enter {
               timeout-ms = <50>;
-              key-positions = <33 34>;
+              key-positions = <19 20>;
               bindings = <&kp RPAR>;
+           };
+           
+           combo_under {
+              timeout-ms = <50>;
+              key-positions = <3 4>;
+              bindings = <&kp UNDER>;
+           };
+           combo_dash {
+              timeout-ms = <50>;
+              key-positions = <7 8>;
+              bindings = <&kp MINUS>;
+           };
+           combo_capsword {
+              timeout-ms = <50>;
+              key-positions = <19 8 9>;
+              bindings = <&caps_word>;
            };
         };
 
@@ -61,31 +77,31 @@
    &none &kp Q      &kp W      &kp F       &kp P        &kp B         &kp J         &kp L       &kp U        &kp Y      &kp SQT  &none
    &none &mt LSHIFT A &mt RALT R &mt LCTRL S &mt LGUI T   &kp G         &kp M         &mt RGUI N  &mt RCTRL E  &mt RALT I &mt RSHIFT O     &none
    &none &kp Z      &mt LALT X &kp C       &kp D        &kp V         &kp K         &kp H       &kp COMMA    &mt LALT DOT    &kp SEMI  &none
-                               &kp TAB &kp SPACE &lt LWR ESC     &kp BSPC &kp RSHIFT &lt RSE RET
+                               &kp BSPC &kp SPACE &lt LWR ESC     &key_repeat &kp RSHIFT &mo RSE
                         >;
                 };
                 lower_layer {
                         bindings = <
-   &none &none    &none       &none     &none      &none       &none     &kp HOME       &kp PG_DN &kp PG_UP      &kp END      &none
+   &none &bt BT_SEL 0   &bt BT_SEL 1       &bt BT_SEL 2   &bt BT_SEL 3      &out OUT_TOG       &none     &kp HOME       &kp PG_DN &kp PG_UP      &kp END      &none
    &none &kp LSHIFT &kp RALT &kp LCTRL &kp LGUI  &none         &none     &kp LEFT &kp DOWN  &kp UP &kp RIGHT &none
    &none &none      &kp LALT &none       &none       &none         &none     &none        &none        &none      &none      &none
-                               &kp TAB &kp SPACE &lt LWR ESC     &kp BSPC &kp RSHIFT &lt RSE RET
+                               &kp BSPC &kp SPACE &lt LWR ESC     &key_repeat &kp RSHIFT &mo RSE
                         >;
                 };
                 raise_layer {
                         bindings = <
    &none &kp EXCL   &kp LBRC   &kp LBKT      &kp LPAR       &kp PIPE        &kp AMPS   &kp RPAR         &kp RBKT       &kp RBRC         &kp QMARK    &none
    &none &mt LSHIFT N1 &mt RALT N2 &mt LCTRL N3   &mt LGUI N4    &kp BSLH         &kp FSLH &mt RGUI N7 &mt RCTRL N8 &mt RALT N9 &mt RSHIFT N0   &none
-   &none &kp GRAVE   &mt TILDE PRCNT &kp CARET       &kp N5        &kp PLUS         &kp ASTRK &kp N6      &kp UNDER    &mt LALT MINUS   &kp EQUAL &none
-                               &kp TAB &kp SPACE &lt LWR ESC     &kp BSPC &kp RSHIFT &lt RSE RET
+   &none &kp GRAVE   &mt LALT TILDE &kp CARET       &kp N5        &kp PLUS         &kp ASTRK &kp N6      &kp UNDER    &mt LALT MINUS   &kp EQUAL &none
+                               &kp BSPC &kp SPACE &lt LWR ESC     &key_repeat &kp RSHIFT &mo RSE
                         >;
                 };
                 adjust_layer {
                         bindings = <
-   &none &bt BT_SEL 0   &bt BT_SEL 1    &kp C_VOL_UP    &kp C_BRI_UP    &reset         &reset         &kp F1   &kp F2   &kp F3      &kp F4   &none
+   &none &bt BT_CLR   &none   &kp C_VOL_UP    &kp C_BRI_UP    &reset         &reset         &kp F1   &kp F2   &kp F3      &kp F4   &none
    &none &kp LSHIFT     &kp RALT        &kp LCTRL       &kp LGUI        &kp C_MUTE     &bt BT_CLR   &kp F5   &kp F6   &kp F7      &kp F8   &none
-   &none &bt BT_SEL 2   &bt BT_SEL 3    &kp C_VOL_DN    &kp C_BRI_DN    &bootloader    &bootloader    &kp F9   &kp F10  &kp F11     &kp F12  &none
-                               &kp TAB &kp SPACE &lt LWR ESC     &kp BSPC &kp RSHIFT &lt RSE RET
+   &none &none  &none  &kp C_VOL_DN    &kp C_BRI_DN    &bootloader    &bootloader    &kp F9   &kp F10  &kp F11     &kp F12  &none
+                               &kp BSPC &kp SPACE &lt LWR ESC     &key_repeat &kp RSHIFT &mo RSE
                         >;
                 };
         };

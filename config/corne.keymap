@@ -29,6 +29,11 @@
     tapping-term-ms = <180>;
 };
 
+&sk {
+    release-after-ms = <250>;
+    quick-release;
+};
+
 / {
         combos {
            compatible = "zmk,combos";
@@ -153,7 +158,7 @@
    &none &kp Q      &kp W      &kp F       &kp P        &kp B         &kp J         &kp L       &kp U        &kp Y      &kp SQT  &none
    &none &mt LSHIFT A &mt RALT R &mt LCTRL S &mt LGUI T   &kp G         &kp M         &mt RGUI N  &mt RCTRL E  &mt RALT I &mt RSHIFT O     &none
    &none &none     &mt LALT X &kp C       &kp D        &none         &none         &kp H       &kp COMMA    &mt LALT DOT    &none  &none
-                               &mo LWR &kp SPACE &none     &none &kp RSHIFT &mo RSE
+                               &mo LWR &kp SPACE &none     &none &sk RSHIFT &mo RSE
                         >;
                 };
                 lower_layer {
@@ -161,7 +166,7 @@
    &none &bt BT_SEL 0   &bt BT_SEL 1       &bt BT_SEL 2   &bt BT_SEL 3      &out OUT_TOG       &none     &kp HOME       &kp PG_DN &kp PG_UP      &kp END      &none
    &none &kp LSHIFT &kp RALT &kp LCTRL &kp LGUI  &none         &kp K_MENU     &kp LEFT &kp DOWN  &kp UP &kp RIGHT &none
    &none &none      &kp LALT &none       &none       &none         &none     &none        &none        &none      &none      &none
-                               &mo LWR &kp SPACE &none     &none &kp RSHIFT &mo RSE
+                               &mo LWR &kp SPACE &none     &none &sk RSHIFT &mo RSE
                         >;
                 };
                 raise_layer {
@@ -169,7 +174,7 @@
    &none &kp UNDER &kp LBRC   &kp LBKT      &kp LT      &kp PIPE        &kp AMPS   &kp GT         &kp RBKT       &kp RBRC         &kp EQUAL    &none
    &none &mt LSHIFT N1 &mt RALT N2 &mt LCTRL N3   &mt LGUI N4    &kp BSLH         &kp FSLH &mt RGUI N7 &mt RCTRL N8 &mt RALT N9 &mt RSHIFT N0   &none
    &none &none   &mt LALT TILDE &kp PLUS       &kp N5        &none         &none &kp N6      &kp STAR    &mt LALT GRAVE   &none &none
-                               &mo LWR &kp SPACE &none     &none &kp RSHIFT &mo RSE
+                               &mo LWR &kp SPACE &none     &none &sk RSHIFT &mo RSE
                         >;
                 };
                 adjust_layer {
@@ -177,7 +182,7 @@
    &none &none  &none   &kp C_VOL_UP    &kp C_BRI_UP    &bt BT_CLR         &kp F12         &kp F7   &kp F8   &kp F9      &kp F10   &none
    &none &kp LSHIFT     &kp RALT        &kp LCTRL       &kp LGUI        &bootloader     &bootloader   &kp F4   &kp F5   &kp F6      &kp F11   &none
    &none &none  &kp LALT  &kp C_VOL_DN    &kp C_BRI_DN    &none    &none    &kp F1   &kp F2  &kp F3     &none  &none
-                               &mo LWR &kp SPACE &none     &none &kp RSHIFT &mo RSE
+                               &mo LWR &kp SPACE &none     &none &sk RSHIFT &mo RSE
                         >;
                 };
         };

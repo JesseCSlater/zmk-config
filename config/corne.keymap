@@ -38,107 +38,101 @@
         combos {
            compatible = "zmk,combos";
            
-           combo_capsword {
+           combo_x {
               timeout-ms = <50>;
-              key-positions = <19 8 9>;
-              bindings = <&caps_word>;
+              key-positions = <1 2>;
+              bindings = <&kp X>;
            };
            
+           
+           combo_colon {
+              timeout-ms = <50>;
+              key-positions = <2 3>;
+              bindings = <&kp COLON>;
+           };
+
+           combo_tab {
+              timeout-ms = <50>;
+              key-positions = <3 4>;
+              bindings = <&kp TAB>;
+           };
            
            combo_question {
               timeout-ms = <50>;
-              key-positions = <1 13>;
+              key-positions = <13 14>;
               bindings = <&kp QUESTION>;
-           };
-
-           combo_colon {
-              timeout-ms = <50>;
-              key-positions = <2 14>;
-              bindings = <&kp COLON>;
-           };
-           
-           combo_escape {
-              timeout-ms = <50>;
-              key-positions = <3 15>;
-              bindings = <&kp ESC>;
            };
            
            combo_lpar {
               timeout-ms = <50>;
-              key-positions = <4 16>;
+              key-positions = <14 15>;
               bindings = <&kp LPAR>;
            };
            
-           combo_tab {
+           combo_backspace {
               timeout-ms = <50>;
-              key-positions = <5 17>;
-              bindings = <&kp TAB>;
+              key-positions = <15 16>;
+              bindings = <&kp BSPC>;
            };
            
            combo_z {
               timeout-ms = <50>;
-              key-positions = <14 26>;
+              key-positions = <26 27>;
               bindings = <&kp Z>;
            };
            
-           combo_delete {
+           combo_escape {
               timeout-ms = <50>;
-              key-positions = <15 27>;
-              bindings = <&kp DEL>;
+              key-positions = <27 28>;
+              bindings = <&kp ESC>;
            };
            
-           combo_back {
+           combo_repeat {
               timeout-ms = <50>;
-              key-positions = <16 28>;
-              bindings = <&kp BSPC>;
+              key-positions = <7 8>;
+              bindings = <&key_repeat>;
            };
             
-            combo_enter {
+            combo_semicolon {
               timeout-ms = <50>;
-              key-positions = <6 18>;
-              bindings = <&kp ENTER>;
+              key-positions = <8 9>;
+              bindings = <&kp SEMI>;
+           };
+           
+           combo_insert {
+              timeout-ms = <50>;
+              key-positions = <9 10>;
+              bindings = <&kp INS>;
+           };
+           
+           combo_enter {
+              timeout-ms = <50>;
+              key-positions = <19 20>;
+              bindings = <&kp RET>;
            };
            
            combo_rpar {
               timeout-ms = <50>;
-              key-positions = <7 19>;
+              key-positions = <20 21>;
               bindings = <&kp RPAR>;
            };
            
-           combo_dash {
+           combo_delete {
               timeout-ms = <50>;
-              key-positions = <8 20>;
+              key-positions = <21 22>;
+              bindings = <&kp DEL>;
+           };
+           
+           combo_minus {
+              timeout-ms = <50>;
+              key-positions = <31 32>;
               bindings = <&kp MINUS>;
            };
            
-           combo_ins {
+           combo_J {
               timeout-ms = <50>;
-              key-positions = <9 21>;
-              bindings = <&kp INS>;
-           };
-           
-           combo_semi {
-              timeout-ms = <50>;
-              key-positions = <10 21>;
-              bindings = <&kp SEMI>;
-           };
-           
-           combo_rep {
-              timeout-ms = <50>;
-              key-positions = <19 31>;
-              bindings = <&key_repeat>;
-           };
-           
-           combo_k {
-              timeout-ms = <50>;
-              key-positions = <20 32>;
-              bindings = <&kp K>;
-           };
-           
-           combo_v {
-              timeout-ms = <50>;
-              key-positions = <21 33>;
-              bindings = <&kp V>;
+              key-positions = <32 33>;
+              bindings = <&kp J>;
            };
         };
 

@@ -39,98 +39,98 @@
            compatible = "zmk,combos";
            
            combo_x {
-              timeout-ms = <50>;
+              timeout-ms = <20>;
               key-positions = <1 2>;
               bindings = <&kp X>;
            };
            
            
            combo_colon {
-              timeout-ms = <50>;
+              timeout-ms = <20>;
               key-positions = <2 3>;
               bindings = <&kp COLON>;
            };
 
            combo_tab {
-              timeout-ms = <50>;
+              timeout-ms = <20>;
               key-positions = <3 4>;
               bindings = <&kp TAB>;
            };
            
            combo_question {
-              timeout-ms = <50>;
+              timeout-ms = <20>;
               key-positions = <13 14>;
               bindings = <&kp QUESTION>;
            };
            
            combo_lpar {
-              timeout-ms = <50>;
+              timeout-ms = <20>;
               key-positions = <14 15>;
               bindings = <&kp LPAR>;
            };
            
            combo_backspace {
-              timeout-ms = <50>;
+              timeout-ms = <20>;
               key-positions = <15 16>;
               bindings = <&kp BSPC>;
            };
            
            combo_z {
-              timeout-ms = <50>;
+              timeout-ms = <20>;
               key-positions = <26 27>;
               bindings = <&kp Z>;
            };
            
            combo_escape {
-              timeout-ms = <50>;
+              timeout-ms = <20>;
               key-positions = <27 28>;
               bindings = <&kp ESC>;
            };
            
            combo_repeat {
-              timeout-ms = <50>;
+              timeout-ms = <20>;
               key-positions = <7 8>;
               bindings = <&key_repeat>;
            };
             
             combo_semicolon {
-              timeout-ms = <50>;
+              timeout-ms = <20>;
               key-positions = <8 9>;
               bindings = <&kp SEMI>;
            };
            
            combo_insert {
-              timeout-ms = <50>;
+              timeout-ms = <20>;
               key-positions = <9 10>;
               bindings = <&kp INS>;
            };
            
            combo_enter {
-              timeout-ms = <50>;
+              timeout-ms = <20>;
               key-positions = <19 20>;
               bindings = <&kp RET>;
            };
            
            combo_rpar {
-              timeout-ms = <50>;
+              timeout-ms = <20>;
               key-positions = <20 21>;
               bindings = <&kp RPAR>;
            };
            
            combo_delete {
-              timeout-ms = <50>;
+              timeout-ms = <20>;
               key-positions = <21 22>;
               bindings = <&kp DEL>;
            };
            
            combo_minus {
-              timeout-ms = <50>;
+              timeout-ms = <20>;
               key-positions = <31 32>;
               bindings = <&kp MINUS>;
            };
            
            combo_J {
-              timeout-ms = <50>;
+              timeout-ms = <20>;
               key-positions = <32 33>;
               bindings = <&kp J>;
            };
@@ -151,7 +151,7 @@
                         bindings = <
    &none &kp Q      &kp W      &kp F       &kp P        &kp B         &kp K         &kp L       &kp U        &kp Y      &kp SQT  &none
    &none &mt LSHIFT A &mt RALT R &mt LCTRL S &mt LGUI T   &kp G         &kp M         &mt RGUI N  &mt RCTRL E  &mt RALT I &mt RSHIFT O     &none
-   &none &none     &mt LALT X &kp C       &kp D        &none         &none         &kp H       &kp COMMA    &mt LALT DOT    &none  &none
+   &none &none     &mt LALT V &kp C       &kp D        &none         &none         &kp H       &kp COMMA    &mt LALT DOT    &none  &none
                                &mo LWR &kp SPACE &none     &none &sk RSHIFT &mo RSE
                         >;
                 };

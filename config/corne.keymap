@@ -31,7 +31,6 @@
 
 &sk {
     release-after-ms = <250>;
-    quick-release;
 };
 
 / {

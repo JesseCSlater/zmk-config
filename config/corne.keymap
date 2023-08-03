@@ -56,7 +56,6 @@
               bindings = <&kp X>;
            };
            
-           
            combo_colon {
               timeout-ms = <20>;
               key-positions = <2 3>;
@@ -81,10 +80,10 @@
               bindings = <&kp LPAR>;
            };
            
-           combo_backspace {
+           combo_repeat {
               timeout-ms = <20>;
               key-positions = <15 16>;
-              bindings = <&kp BSPC>;
+              bindings = <&key_repeat>;
            };
            
            combo_z {
@@ -97,12 +96,6 @@
               timeout-ms = <20>;
               key-positions = <27 28>;
               bindings = <&kp ESC>;
-           };
-           
-           combo_repeat {
-              timeout-ms = <20>;
-              key-positions = <7 8>;
-              bindings = <&key_repeat>;
            };
             
             combo_semicolon {
@@ -172,7 +165,7 @@
    &none &bt BT_SEL 0   &bt BT_SEL 1       &bt BT_SEL 2   &bt BT_SEL 3      &out OUT_TOG       &none     &kp HOME       &kp PG_DN &kp PG_UP      &kp END      &none
    &none &kp LSHIFT &kp RALT &kp LCTRL &kp LGUI  &none         &kp K_MENU     &kp LEFT &kp DOWN  &kp UP &kp RIGHT &none
    &none &none      &kp LALT &none       &none       &none         &none     &none        &none        &none      &none      &none
-                               &mo LWR &kp SPACE &none     &none &sk LSHIFT &mo RSE
+                               &mo LWR &kp SPACE &none     &none &sk BSPC &mo RSE
                         >;
                 };
                 raise_layer {

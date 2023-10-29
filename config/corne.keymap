@@ -49,13 +49,7 @@
         
         combos {
            compatible = "zmk,combos";
-           
-           combo_x {
-              timeout-ms = <20>;
-              key-positions = <1 2>;
-              bindings = <&kp X>;
-           };
-           
+
            combo_colon {
               timeout-ms = <20>;
               key-positions = <2 3>;
@@ -67,11 +61,11 @@
               key-positions = <3 4>;
               bindings = <&kp TAB>;
            };
-           
-           combo_question {
+                      
+           combo_x {
               timeout-ms = <20>;
               key-positions = <13 14>;
-              bindings = <&kp QUESTION>;
+              bindings = <&kp X>;
            };
            
            combo_lpar {
@@ -97,7 +91,13 @@
               key-positions = <27 28>;
               bindings = <&kp ESC>;
            };
-            
+,,
+           combo_enter {
+              timeout-ms = <20>;
+              key-positions = <7 8>;
+              bindings = <&kp RET>;
+           };
+           
             combo_semicolon {
               timeout-ms = <20>;
               key-positions = <8 9>;
@@ -110,24 +110,18 @@
               bindings = <&kp INS>;
            };
            
-           combo_enter {
-              timeout-ms = <20>;
-              key-positions = <19 20>;
-              bindings = <&kp RET>;
-           };
-           
            combo_rpar {
               timeout-ms = <20>;
               key-positions = <20 21>;
               bindings = <&kp RPAR>;
            };
-           
-           combo_delete {
+
+           combo_question {
               timeout-ms = <20>;
               key-positions = <21 22>;
-              bindings = <&kp DEL>;
+              bindings = <&kp QUESTION>;
            };
-           
+
            combo_minus {
               timeout-ms = <20>;
               key-positions = <31 32>;
@@ -164,8 +158,8 @@
                         bindings = <
    &none &bt BT_SEL 0   &bt BT_SEL 1       &bt BT_SEL 2   &bt BT_SEL 3      &out OUT_TOG       &none     &kp HOME       &kp PG_DN &kp PG_UP      &kp END      &none
    &none &kp LSHIFT &kp RALT &kp LCTRL &kp LGUI  &none         &kp K_MENU     &kp LEFT &kp DOWN  &kp UP &kp RIGHT &none
-   &none &none      &kp LALT &none       &none       &none         &none     &none        &none        &none      &none      &none
-                               &mo LWR &kp SPACE &none     &none &sk BSPC &mo RSE
+   &none &none      &kp LALT &none       &sk DEL       &none         &none     &sk BSPC        &none        &none      &none      &none
+                               &mo LWR &kp SPACE &none     &none &sk LSHIFT &mo RSE
                         >;
                 };
                 raise_layer {

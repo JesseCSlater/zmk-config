@@ -71,7 +71,7 @@
            combo_J {
               timeout-ms = <20>;
               key-positions = <15 16>;
-              bindings = <&kp LPAR>;
+              bindings = <&kp J>;
            };
            
            combo_escape {

@@ -131,32 +131,32 @@
                 default_layer {
                         bindings = <
    &none &none      &kp W      &kp F       &kp P        &kp B         &kp K         &kp L       &kp U        &kp Y      &none  &none
-   &none &gqt LSHIFT A &gqt RALT R &gqt LCTRL S &gqt LGUI T   &kp G         &kp M         &gqt RGUI N  &gqt RCTRL E  &gqt RALT I &gqt RSHIFT O     &none
-   &none &kp EXCL  &gqt LALT V &kp C       &kp D        &none         &none         &kp H       &kp COMMA    &gqt LALT DOT    &kp QMARK  &none
+   &none &gqt LSHIFT A &gqt LALT R &gqt LCTRL S &gqt LGUI T   &kp G         &kp M         &gqt RGUI N  &gqt RCTRL E  &gqt LALT I &gqt RSHIFT O     &none
+   &none &kp EXCL  &gqt RALT V &kp C       &kp D        &none         &none         &kp H       &kp COMMA    &gqt RALT DOT    &kp QMARK  &none
                                &mo LWR &kp SPACE &none     &none &sk LSHIFT &mo RSE
                         >;
                 };
                 lower_layer {
                         bindings = <
    &none &none   &bt BT_SEL 1       &bt BT_SEL 2   &bt BT_SEL 3      &out OUT_TOG       &none     &kp HOME       &kp PG_DN &kp PG_UP      &none      &none
-   &none &kp LSHIFT &kp RALT &kp LCTRL &kp LGUI  &none         &kp K_MENU     &kp LEFT &kp DOWN  &kp UP &kp RIGHT &none
-   &none &bt BT_SEL 0   &kp LALT &none       &none       &none         &sk DEL     &sk BSPC        &kp RET        &kp TAB      &kp END      &none
+   &none &kp LSHIFT &kp LALT &kp LCTRL &kp LGUI  &none         &kp K_MENU     &kp LEFT &kp DOWN  &kp UP &kp RIGHT &none
+   &none &bt BT_SEL 0   &kp RALT &none       &none       &none         &sk DEL     &sk BSPC        &kp RET        &kp TAB      &kp END      &none
                                &mo LWR &kp SPACE &none     &none &sk LSHIFT &mo RSE
                         >;
                 };
                 raise_layer {
                         bindings = <
    &none &none &kp LBKT   &kp LBRC      &kp  LPAR      &kp PIPE        &kp AMPS   &kp RPAR         &kp RBRC       &kp RBKT         &none    &none
-   &none &mt LSHIFT N1 &mt RALT N2 &mt LCTRL N3   &mt LGUI N4    &kp BSLH         &kp FSLH &mt RGUI N7 &mt RCTRL N8 &mt RALT N9 &mt RSHIFT N0   &none
-   &none &kp GRAVE   &mt LALT PLUS &kp EQUAL       &kp N5        &none         &none &kp N6      &kp CARET    &mt LALT STAR   &kp TILDE &none
+   &none &mt LSHIFT N1 &mt LALT N2 &mt LCTRL N3   &mt LGUI N4    &kp BSLH         &kp FSLH &mt RGUI N7 &mt RCTRL N8 &mt LALT N9 &mt RSHIFT N0   &none
+   &none &kp GRAVE   &mt RALT PLUS &kp EQUAL       &kp N5        &none         &none &kp N6      &kp CARET    &mt RALT STAR   &kp TILDE &none
                                &mo LWR &kp SPACE &none     &none &sk LSHIFT &mo RSE
                         >;
                 };
                 adjust_layer {
                         bindings = <
    &none &none  &none   &kp C_VOL_UP    &kp C_BRI_UP    &bt BT_CLR         &kp F12         &kp F7   &kp F8   &kp F9      &none   &none
-   &none &kp LSHIFT     &kp RALT        &kp LCTRL       &kp LGUI        &bootloader     &bootloader   &kp F4   &kp F5   &kp F6      &kp F10   &none
-   &none &none  &kp LALT  &kp C_VOL_DN    &kp C_BRI_DN    &none    &none    &kp F1   &kp F2  &kp F3     &kp F11  &none
+   &none &kp LSHIFT     &kp LALT        &kp LCTRL       &kp LGUI        &bootloader     &bootloader   &kp F4   &kp F5   &kp F6      &kp F10   &none
+   &none &none  &kp RALT  &kp C_VOL_DN    &kp C_BRI_DN    &none    &none    &kp F1   &kp F2  &kp F3     &kp F11  &none
                                &mo LWR &kp SPACE &none     &none &sk LSHIFT &mo RSE
                         >;
                 };

@@ -154,7 +154,7 @@
                 };
                 adjust_layer {
                         bindings = <
-   &none &none  &none   &kp C_VOL_UP    &kp C_BRI_UP    &bt BT_CLR         &kp F12         &kp F7   &kp F8   &kp F9      &KP F10   &none
+   &none &none  &none   &kp C_VOL_UP    &kp C_BRI_UP    &bt BT_CLR         &kp F12         &kp F7   &kp F8   &kp F9      &kp F10   &none
    &none &kp LSHIFT     &kp LALT        &kp LCTRL       &kp LGUI        &bootloader     &bootloader   &kp F4   &kp F5   &kp F6      &kp F11   &none
    &none &none  &kp RALT  &kp C_VOL_DN    &kp C_BRI_DN    &none    &none    &kp F1   &kp F2  &kp F3     &kp F10  &none
                                &mo LWR &kp SPACE &none     &none &sk LSHIFT &mo RSE
